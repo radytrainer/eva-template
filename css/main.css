@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+nav {
+    background: #1a84dc;
+    flex:0.5;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+main {
+    flex:3;
+    display: flex;
+}
+.content {
+    background: #1776c3;
+    flex:3;
+}
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+}
+.top-sidebar,
+.bottom-sidebar {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-sidebar {
+    background: #1465a7;
+}
+.bottom-sidebar {
+    background: #0b4474;
+}
+footer {
+    flex:1;
+    background: #105287;
+    display: flex;
+}
+.header-title {
+    flex:1;
+    flex-basis:100%;
+    background: #285c88;
+}
+.header-title h1 {
+    background: #294e6f;
+    padding: 10px;
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+}
+.product-card,
+.partnership-card {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.card {
+    background:  #285c88;
+    flex:1;
+    border-radius: 4px;
+    flex-basis: 24%;
+    box-sizing: border-box;
+}
+.card-title {
+    padding: 10px;
+    background: #294e6f;
+    color: #fff;
+    box-sizing: border-box;
+}
+.card-body {
+    padding: 10px;
+}
+.card-body p,
+.footer-left p,
+.footer-right p {
+    background:  #294e6f;
+    color:#fff;
+    padding: 10px;
+}
+.footer-left,
+.footer-right {
+    padding: 10px;
+    flex:1;
+}
+@media(max-width:760px) {
+    aside {
+     display: none;
+    }
+    .product-card {
+     width: 99%;
+    }
+    .card {
+     flex-basis:48%;
+    }
+    nav {
+     flex-wrap: wrap;
+    }
+    ul {
+     flex-wrap: wrap;
+    }
+ }
+
+@media(max-width:670px) {
+   aside {
+    display: none;
+   }
+   .product-card {
+    width: 99%;
+   }
+   .card {
+    flex-basis: 100%;
+   }
+   nav {
+    flex-wrap: wrap;
+   }
+   ul {
+    flex-wrap: wrap;
+   }
+}
