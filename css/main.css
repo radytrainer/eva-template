@@ -113,7 +113,8 @@ footer {
     aside {
      display: none;
     }
-    .product-card {
+    .product-card,
+    .partnership-card {
      width: 99%;
     }
     .card {
@@ -122,16 +123,15 @@ footer {
     nav {
      flex-wrap: wrap;
     }
-    ul {
-     flex-wrap: wrap;
-    }
+   
  }
 
 @media(max-width:670px) {
    aside {
     display: none;
    }
-   .product-card {
+   .product-card,
+   partnership-card {
     width: 99%;
    }
    .card {
@@ -140,7 +140,5 @@ footer {
    nav {
     flex-wrap: wrap;
    }
-   ul {
-    flex-wrap: wrap;
-   }
+  
 }
